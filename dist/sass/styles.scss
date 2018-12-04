@@ -1,0 +1,176 @@
+/* EMAIL Boilerplate v1.0.0 | MIT License | https://github.com/khorosh1lov/email-boilerplate.git */
+
+// Link to Custom Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+
+// Vars
+$white: #ffffff;
+$black: #111111;
+$grey: #f6f6f6;
+$blue: #0000dd;
+$red: #d22802;
+
+$headline-font: 'Noto Sans TC', Arial, sans-serif;
+$text-font: 'Open Sans', Arial, sans-serif;
+$safe-font: Arial, sans-serif;
+
+// GLOBAL STYLES
+html, body,
+.document {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $grey;
+    font-family: $safe-font;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+// Force Outlook to provide a "view in browser" menu link.
+#outlook a { padding: 0; }
+
+// Force Hotmail to display emails at full width
+.ExternalClass { width: 100%; }
+
+// Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+
+// TABLES, ROWS, CELLS
+table, table td {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse !important;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    mso-cellspacing: 0;
+}
+td {
+    vertical-align: top;
+}
+
+// IMAGES
+img, a img {
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+.image {
+    display: block;
+}
+
+// STYLES FOR MAIN TABLE OF WHOLE EMAIL
+#backgroundTable {
+    font-family: $text-font;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    line-height: 100% !important;
+    color: $black;
+}
+
+// FOR INBOX PREVIEW
+.previewText {
+    display: none !important;
+    max-height: 0px !important;
+    overflow: hidden !important;
+}
+
+// PHONE NUMBERS AND ADDRESSES DETECTORS
+a[href^="tel"], a[href^="sms"] {
+    text-decoration: underline;
+    color: $blue;
+    pointer-events: auto;
+    cursor: default;
+}
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: underline !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+.x-gmail-data-detectors,
+.x-gmail-data-detectors *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+}
+.btn {
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.btn:hover {
+    background-color: $blue;
+}
+
+// WIDTHS
+.w600 {
+    width: 600px;
+}
+.w580 {
+    width: 580px;
+}
+
+// COLORS
+.white {
+    background-color: $white;
+}
+.grey {
+    background-color: $grey;
+}
+.red {
+    background-color: $red;
+}
+
+// TYPOGRAPHY
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headline-font;
+    font-weight: bold;
+    line-height: 1.25;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 33px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 27px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 21px;
+}
+h6 {
+    font-size: 18px;
+}
+
+p, span {
+    font-family: $text-font;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+// MEDIA QUERIES
+@media only screen and (max-device-width: 480px) {}

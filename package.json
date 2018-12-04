@@ -1,0 +1,43 @@
+{
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-inline-css": "^3.3.1",
+    "gulp-inline-source": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-comments": "^2.5.2",
+    "yargs": "^12.0.5"
+  },
+  "engines": {},
+  "ebp-configs": {
+    "directories": {
+      "dist": "dist",
+      "src": "src"
+    }
+  },
+  "homepage": "https://github.com/khorosh1lov/email-boilerplate",
+  "license": "MIT",
+  "name": "email-boilerplate",
+  "author": "Alexander Khoroshilov",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "version": "1.0.0",
+  "description": "Ready-to-use template for building responsive, fast and cross platform emails.",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "package.json",
+    "dist/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khorosh1lov/email-boilerplate.git"
+  }
+}
